@@ -17,14 +17,24 @@ describe("FizzBuzz", function() {
       var arrayMultiplesOfThree = [3, 6, 18, 21, 24, 33, 36]
       arrayMultiplesOfThree.forEach(myFunction);
       function myFunction(value) {
-        expect(fizzBuzz.play(3)).toEqual('fizz');
-      };  
+        expect(fizzBuzz.play(value)).toEqual('fizz');
+      };
     });
   });
 
   describe ('returns buzz', function () {
     it ('when passed 5', function() {
       expect(fizzBuzz.play(5)).toEqual('buzz');
+    });
+  });
+
+  describe('returns buzz', function() {
+    it ('for multiples of 5', function() {
+      var arrayMultiplesOfFive = [5, 10, 20, 25, 35, 65]
+      arrayMultiplesOfFive.forEach(myFunction);
+      function myFunction(value) {
+        expect(fizzBuzz.play(value)).toEqual('buzz')
+      };
     });
   });
 
