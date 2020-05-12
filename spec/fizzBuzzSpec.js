@@ -6,10 +6,17 @@ describe("FizzBuzz", function() {
     fizzBuzz = new FizzBuzz();
   });
 
-  describe('multiples of 3', function() {
-    it ("returns fizz when passed 3", function() {
-        expect(fizzBuzz.play(3)).toEqual('fizz');
+  describe('returns fizz', function() {
+    it ('when passed 3', function() {
+      expect(fizzBuzz.play(3)).toEqual('fizz');
     });
+  });
+
+  describe ('returns buzz', function () {
+    it ('when passed 5', function() {
+      expect(fizzBuzz.play(5)).toEqual('buzz');
+    });
+
   });
 
   // Original Rspec
