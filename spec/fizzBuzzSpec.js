@@ -12,6 +12,16 @@ describe("FizzBuzz", function() {
     });
   });
 
+  describe('returns fizz', function() {
+    it ('for multiples of 3', function() {
+      var arrayMultiplesOfThree = [3, 6, 18, 21, 24, 33, 36]
+      arrayMultiplesOfThree.forEach(myFunction);
+      function myFunction(value) {
+        expect(fizzBuzz.play(3)).toEqual('fizz');
+      };  
+    });
+  });
+
   describe ('returns buzz', function () {
     it ('when passed 5', function() {
       expect(fizzBuzz.play(5)).toEqual('buzz');
