@@ -44,13 +44,24 @@ describe("FizzBuzz", function() {
     });
   });
 
+  describe ('returns javabuzz', function() {
+    it ('for multiples of 15', function() {
+      var arrayMultiplesOfFifteen = [15, 30, 45, 90]
+      arrayMultiplesOfFifteen.forEach(myFunction);
+      function myFunction(value) {
+        expect(fizzBuzz.play(value)).toEqual('javabuzz')
+      }
+    });
+  });
+
+
   describe ('returns "out of range"', function() {
     it ('when passed -1', function() {
       expect(fizzBuzz.play(-1)).toEqual('out of range')
     });
   });
 
-  describe ('returns number', function() {
+  describe ('returns 4', function() {
     it ('when passed 4', function() {
       expect(fizzBuzz.play(4)).toEqual(4)
     })
