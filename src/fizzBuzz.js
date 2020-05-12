@@ -1,6 +1,9 @@
 class FizzBuzz {
 
   play(number) {
+    if (number % 5 === 0 && number % 3 === 0 ) {
+      return "javabuzz"
+    }
     if (number % 3 === 0 ) {
       return "fizz"
     }

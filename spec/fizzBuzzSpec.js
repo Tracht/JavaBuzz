@@ -16,7 +16,12 @@ describe("FizzBuzz", function() {
     it ('when passed 5', function() {
       expect(fizzBuzz.play(5)).toEqual('buzz');
     });
+  });
 
+  describe ('returns javabuzz', function() {
+    it ('when passed 15', function() {
+      expect(fizzBuzz.play(15)).toEqual('javabuzz');
+    });
   });
 
 });
