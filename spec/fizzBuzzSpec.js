@@ -30,6 +30,12 @@ describe("FizzBuzz", function() {
     });
   });
 
+  describe ('returns number', function() {
+    it ('when passed 4', function() {
+      expect(fizzBuzz.play(4)).toEqual(4)
+    })
+  })
+
 });
 
 // Original Rspec

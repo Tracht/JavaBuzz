@@ -13,6 +13,9 @@ class FizzBuzz {
     if (number < 0 ) {
       return "out of range"
     }
+      else {
+        return number
+      }
   }
 
 };
