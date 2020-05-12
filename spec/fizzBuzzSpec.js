@@ -54,7 +54,6 @@ describe("FizzBuzz", function() {
     });
   });
 
-
   describe ('returns "out of range"', function() {
     it ('when passed -1', function() {
       expect(fizzBuzz.play(-1)).toEqual('out of range')
@@ -66,6 +65,12 @@ describe("FizzBuzz", function() {
       expect(fizzBuzz.play(4)).toEqual(4)
     })
   })
+
+  describe('returns 0.5', function() {
+    it ('when passed 0.5', function() {
+      expect(fizzBuzz.play(0.5)).toEqual(0.5)
+    });
+  });
 
 });
 
