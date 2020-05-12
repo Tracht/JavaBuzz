@@ -24,6 +24,12 @@ describe("FizzBuzz", function() {
     });
   });
 
+  describe ('returns "out of range"', function() {
+    it ('when passed -1', function() {
+      expect(fizzBuzz.play(-1)).toEqual('out of range')
+    });
+  });
+
 });
 
 // Original Rspec

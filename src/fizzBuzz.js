@@ -10,6 +10,9 @@ class FizzBuzz {
     if (number % 5 === 0 ) {
       return "buzz"
     }
+    if (number < 0 ) {
+      return "out of range"
+    }
   }
 
 };
